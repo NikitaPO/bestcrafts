@@ -2,14 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="import" href="css\main.css">
     <title>Vue.js изучение</title>
   </head>
   <body>
+
     <div class="app">
         <p><span @click="title='Текст'">Текст click</span></p>
         <p><span @mouseover="title='Текст'">Текст mouseover</span></p>
         <p>{{ title }}</p>
-        <p>Цвет: {{ styleCSS }}</p>
+        <p v-bind:class="{{ styleCSS }}">Цвет: {{ styleCSS }}</p>
         <input type="text" @input="styleCSS = $event.target.value">
     </div>
 
