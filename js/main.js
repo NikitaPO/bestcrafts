@@ -1,6 +1,12 @@
 new Vue({
-  el: '#app',
+  el: '.app',
   data: {
-    title: "Hello World!"
+    title: "Hello World!",
+    styleCSS: ''
+  }
+  methods: {
+    changeText(){
+      this.title = 'Какой либо текст'
+    }
   }
 })
