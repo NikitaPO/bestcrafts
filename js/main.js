@@ -2,7 +2,7 @@ new Vue({
   el: '.app',
   data: {
     title: "Hello World!",
-    styleCSS: ''
+    styleCSS: '',
   },
   methods: {
     changeText(){

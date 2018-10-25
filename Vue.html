@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!-- v-on = @  -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="import" href="css\main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Vue.js изучение</title>
   </head>
   <body>
@@ -11,8 +12,8 @@
         <p><span @click="title='Текст'">Текст click</span></p>
         <p><span @mouseover="title='Текст'">Текст mouseover</span></p>
         <p>{{ title }}</p>
-        <p v-bind:class="{{ styleCSS }}">Цвет: {{ styleCSS }}</p>
-        <input type="text" @input="styleCSS = $event.target.value">
+        <p v-bind:class="styleCSS">Цвет: {{ styleCSS }}</p>
+        <input type="text" v-on:input="styleCSS = $event.target.value">
     </div>
 
     <script src="https://unpkg.com/vue"></script>
